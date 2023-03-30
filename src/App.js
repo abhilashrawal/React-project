@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React  from "react";
+import StudentList from "./StudentList";
+import Counter from "./Counter"
+
+import EmployeeList from "./EmployeeList";
+import UserList from "./UserList";
+import User from "./User";
+import EmployeeRow from "./EmployeeRow";
+import Form from "./Form";
+
+function App(){
+  return(
+   <React.Fragment>
+      {/* <h1>Hello world</h1>
+      <Header />
+      <StudentList />
+      <Counter />
+ <User/>
+ <UserList />
+ <EmployeeList />
+ */}
+<Form />
+
+</React.Fragment>
+  )
 }
-
 export default App;
