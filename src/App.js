@@ -16,13 +16,13 @@ function App(){
       {/* <h1>Hello world</h1>
       <Header />
       <StudentList />
-      <Counter />
+
  <User/>
  <UserList />
- <EmployeeList />
- */}
-<Form />
 
+ */}
+<Form />      <Counter></Counter>
+<EmployeeList />
 </React.Fragment>
   )
 }

@@ -2,32 +2,34 @@ import {useState} from "react"
 function Counter(){
     
     const[count,setCount]=useState(0);
-
-
-    const increment=()=>{
-if(count<10){
-    setCount(count +1 );
-}
-       
-     
-        
+    const myStyle = {
+        color:"green",
+        backgroundcolor:"green"    
+    }
+    const style = {
+        color:"blue"
     }
     
-    const decrement=()=>{
-        if(count>0){
-
-        setCount(count -1 );
+    const increment=()=>{
+if(count<10){
+    setCount(count+1 );
+}       
     }
-}
+        const decrement=()=>{
+        if(count>0){
+      setCount(count-1 );
+    }
+}   
 
     return(
         <div>
-            
-            
-            <h1>{count}</h1>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>decrement</button>
-        
+            <p style = {{color:"red", backgroundcolor:"yellow"}}>There are range bw 0
+                 to 10
+            </p>
+         <h1 style={myStyle}>{count}</h1>
+         <p style ={myStyle}>Hello World</p>
+            <button style={style} onClick={increment}>Increment</button>
+            <button style={myStyle}onClick={decrement}>decrement</button>      
         </div>
     )
 }
